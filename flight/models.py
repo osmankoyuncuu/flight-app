@@ -29,4 +29,7 @@ class Reservation(models.Model):
     passenger = models.ManyToManyField(Passenger, related_name="reservations")
     flight = models.ForeignKey(Flight, on_delete=models.CASCADE, related_name="reservation")
     
+    def __str__(self):
+        return f'{self.user} {self.flight}'
+    
     
