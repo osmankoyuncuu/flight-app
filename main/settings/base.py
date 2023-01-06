@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     #!"debug_toolbar",
     #my app
     'users',
+    'flight',
 
 
 ]
