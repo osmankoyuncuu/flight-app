@@ -7,7 +7,7 @@ class Flight(models.Model):
     departure_city = models.CharField(max_length=30)
     arrival_city = models.CharField(max_length=30)
     date_of_departure = models.DateField()
-    etd = models.TimeField()
+    estimated_time_depature = models.TimeField()
     
     def __str__(self):
         return f'{self.flight_number} - {self.departure_city} - {self.arrival_city}'

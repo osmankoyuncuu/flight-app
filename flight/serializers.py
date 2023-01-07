@@ -11,7 +11,7 @@ class FlightSerializer(serializers.ModelSerializer):
             "departure_city",
             "arrival_city",
             "date_of_departure",
-            "etd"
+            "estimated_time_depature"
         )
 
 class PassengerSerializer(serializers.ModelSerializer):
@@ -57,6 +57,6 @@ class StaffFlightSerializer(serializers.ModelSerializer):
             "departure_city",
             "arrival_city",
             "date_of_departure",
-            "etd",
+            "estimated_time_depature",
             "reservation",
         )
